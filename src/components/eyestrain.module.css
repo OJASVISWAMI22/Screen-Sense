@@ -1,0 +1,114 @@
+.eyestrainReducer {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lightMode .eyestrainReducer {
+  background-color: #e8f5e9;
+  color: #333;
+}
+
+.darkMode .eyestrainReducer {
+  background-color: #1e3a2f;
+  color: #e0e0e0;
+}
+
+.eyestrainReducer h2 {
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.lightMode .eyestrainReducer h2 {
+  color: #2e7d32;
+}
+
+.darkMode .eyestrainReducer h2 {
+  color: #4caf50;
+}
+
+.timerInfo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.onBreak {
+  transition: color 0.3s;
+}
+
+.lightMode .onBreak {
+  color: #1b5e20;
+}
+
+.darkMode .onBreak {
+  color: #81c784;
+}
+
+.button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+}
+
+.lightMode .button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.darkMode .button {
+  background-color: #388e3c;
+  color: #ffffff;
+}
+
+.button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.screenTime {
+  margin-top: 15px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.lightMode .screenTime {
+  color: #555;
+}
+
+.darkMode .screenTime {
+  color: #bdbdbd;
+}
+
+.developmentMode {
+  font-style: italic;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.lightMode .developmentMode {
+  color: #757575;
+}
+
+.darkMode .developmentMode {
+  color: #9e9e9e;
+}
+
+@media (max-width: 600px) {
+  .eyestrainReducer {
+    padding: 15px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

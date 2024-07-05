@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ScreenSense",
+  "version": "1.0.0",
+  "description": "Monitor screen time, track hydration, and reduce eye strain",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,166 @@
+.dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lightMode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.darkMode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lightMode h1 {
+  color: #2c3e50;
+}
+
+.darkMode h1 {
+  color: #ecf0f1;
+}
+
+.screenTimeSection {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lightMode .screenTimeSection {
+  background-color: white;
+}
+
+.darkMode .screenTimeSection {
+  background-color: #424242;
+}
+
+.screenTimeSection h2 {
+  margin-bottom: 15px;
+}
+
+.lightMode .screenTimeSection h2 {
+  color: #3498db;
+}
+
+.darkMode .screenTimeSection h2 {
+  color: #5dade2;
+}
+
+.progressBar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.lightMode .progressBar {
+  background-color: #e0e0e0;
+}
+
+.darkMode .progressBar {
+  background-color: #555555;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.lightMode .button {
+  background-color: #3498db;
+  color: white;
+}
+
+.darkMode .button {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100px;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.lightMode .input {
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.darkMode .input {
+  border: 1px solid #555;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.lightMode .input:focus {
+  border-color: #3498db;
+}
+
+.darkMode .input:focus {
+  border-color: #5dade2;
+}
+
+.environmentInfo {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.lightMode .environmentInfo {
+  color: #7f8c8d;
+}
+
+.darkMode .environmentInfo {
+  color: #bdc3c7;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .screenTimeSection {
+    padding: 15px;
+  }
+
+  .button, .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

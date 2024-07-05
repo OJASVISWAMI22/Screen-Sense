@@ -1,0 +1,156 @@
+.hydrationTracker {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lightMode .hydrationTracker {
+  background-color: #e1f5fe;
+  color: #333;
+}
+
+.darkMode .hydrationTracker {
+  background-color: #0d47a1;
+  color: #e0e0e0;
+}
+
+.hydrationTracker h2 {
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.lightMode .hydrationTracker h2 {
+  color: #0288d1;
+}
+
+.darkMode .hydrationTracker h2 {
+  color: #64b5f6;
+}
+
+.hydrationInfo {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.lightMode .progressBar {
+  background-color: #e0e0e0;
+}
+
+.darkMode .progressBar {
+  background-color: #1565c0;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out, background-color 0.3s;
+}
+
+.lightMode .progressFill {
+  background-color: #2196F3;
+}
+
+.darkMode .progressFill {
+  background-color: #42a5f5;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+  min-width: 100px;
+}
+
+.lightMode .button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.darkMode .button {
+  background-color: #1976D2;
+  color: #ffffff;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.resetButton {
+  transition: background-color 0.3s;
+}
+
+.lightMode .resetButton {
+  background-color: #FF5722;
+}
+
+.darkMode .resetButton {
+  background-color: #E64A19;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.lightMode .input {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ddd;
+}
+
+.darkMode .input {
+  background-color: #0a2472;
+  color: #ffffff;
+  border: 1px solid #1565c0;
+}
+
+.developmentMode {
+  font-style: italic;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.lightMode .developmentMode {
+  color: #757575;
+}
+
+.darkMode .developmentMode {
+  color: #bdbdbd;
+}
+
+@media (max-width: 600px) {
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .button, .input {
+    width: 100%;
+  }
+}

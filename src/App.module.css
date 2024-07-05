@@ -1,0 +1,63 @@
+.app {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.lightMode {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.app.darkMode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.lightMode .header {
+  color: #2c3e50;
+  border-color: #3498db;
+}
+
+.darkMode .header {
+  color: #f0f0f0;
+  border-color: #757575;
+}
+
+.main {
+  transition: background-color 0.3s;
+}
+
+.lightMode .main {
+  background-color: #ffffff;
+}
+
+.darkMode .main {
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
