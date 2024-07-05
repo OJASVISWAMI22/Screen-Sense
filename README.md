@@ -51,4 +51,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 Your Name - ojasviswami22@gmail.com
-Project Link: [https://github.com/yourusername/screensense](https://github.com/yourusername/screensense)
+Project Link: https://github.com/OJASVISWAMI22/ScreenSense.git
